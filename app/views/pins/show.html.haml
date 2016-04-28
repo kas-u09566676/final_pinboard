@@ -1,0 +1,6 @@
+%h1= @Pin.title
+%p= @Pin.description
+
+=link_to "BACK UP", root_path
+=link_to "OOPSIE", edit_pin_path
+=link_to "DON'T DO IT", pin_path, method: :delete, data: { confirm: "PLEASE DON'T DELETE ME??? IM RELEVENT I SWEAR I AM :'(" }
