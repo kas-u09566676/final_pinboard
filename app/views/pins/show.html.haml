@@ -1,5 +1,10 @@
 %h1= @Pin.title
 %p= @Pin.description
+%p
+Posted by
+= @Pin.user.email
+
+%br/
 
 =link_to "BACK UP", root_path
 =link_to "OOPSIE", edit_pin_path
